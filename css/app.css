@@ -1,0 +1,307 @@
+*{
+	box-sizing: border-box;
+	font-family: 'Yanone Kaffeesatz', sans-serif;
+}
+section{
+	font-size: 20px;
+	text-align: center;
+}
+.myName{
+	text-shadow: 2px 2px #000000;
+}
+.jobTitle{
+	text-shadow: 2px 2px #000000;
+}
+.text-center{
+	text-align: center;
+}
+.mainHeader{
+	background-image: url("https://www.continentalcredit.com/wp-content/uploads/2015/12/about-header-background-for-web-768x312.jpg");
+	background-repeat: no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+	width: 100%;
+	height: 100vh;
+}
+.mainHeader, .sectionHeader{
+	font-weight: bold;
+	color: white;
+}
+.sectionHeader, .modal-title{
+	font-size: 32px;
+	color: black;
+}
+.sectionHeader{
+	text-align: left;
+	border-bottom: 1px dotted black;
+	margin-bottom: 20px;
+	text-indent: 30px;
+}
+.portfolioSection{
+	text-align: center;
+}
+/*article{
+	margin-bottom: 20px;
+}*/
+article > header{
+	font-size: 28px;
+}
+.mainContent, .mainHeader{
+	padding: 20px;
+}
+.mainContent > section{
+	margin-bottom: 20px; 
+}
+.mainContent > section:last-child{
+	margin-bottom: 0;
+}
+.mainFooter{
+	padding-left: 20px;
+	padding-right: 20px;
+}
+.resumeHeader, .iframeContainer{
+	text-align: center;
+}
+.myName{
+	font-size: 64px;
+}
+.jobTitle{
+	font-size: 32px;
+}
+.navListHorizontal{
+	list-style: none;
+	font-size: 0;
+	text-align: center;
+	height: 60px;
+	border-bottom: 1px solid black;
+	margin-top: -60px;
+	background-color: black;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, .5);
+}
+.navListItem{
+	display: inline-block;
+	font-size: 28px;
+	margin-left: 20px;
+	/*padding-top: 10px;
+	padding-bottom: 10px;*/
+	line-height: 60px;
+	color: white;
+	min-width: 85px;
+}
+.navListItem:hover{
+	background-color: white;
+	color: black;
+	cursor: pointer;
+    -webkit-transition: background-color .5s;
+    -moz-transition:    background-color .5s;
+    -ms-transition:     background-color .5s;
+    -o-transition:      background-color .5s;
+    transition:         background-color .5s;
+}
+/*.navListItem:hover{
+	background-color: white;
+	color: black !important;
+	min-width: 82px;
+}*/
+/*.navListItem > a{
+	display: block;
+	text-decoration: none !important;
+	color: white;
+	min-width: 85px;
+}*/
+/*.navListItem > a:hover{
+	background-color: white;
+	color: black;
+	cursor: pointer;
+    -webkit-transition: background-color .5s;
+    -moz-transition:    background-color .5s;
+    -ms-transition:     background-color .5s;
+    -o-transition:      background-color .5s;
+    transition:         background-color .5s;
+}*/
+.navListItem:first-child{
+	margin-left: 0px;
+}
+.mainFooter{
+	height: 60px;
+	line-height: 60px;
+	border-top: 1px solid black;
+}
+/*.resumeButton{
+	text-align: center;
+}*/
+.technologyList{
+	list-style: none;
+	font-size: 0;
+	text-align: center;
+	padding-left: 0;
+}
+.navListHorizontal{
+	padding-left: 0;
+}
+.technologyList > li{
+	display: inline-block;
+	width: 20%;
+	margin-top: 10px;
+}
+/*.technologyList > li:nth-child(1){
+	background-image: url("images/js-logo.png");
+}
+.technologyList > li:nth-child(2){
+	background-image: url("images/express-logo.png");
+}
+.technologyList > li:nth-child(3){
+	background-image: url("");
+}
+.technologyList > li:nth-child(4){
+	background-image: url("");
+}
+.technologyList > li:nth-child(5){
+	background-image: url("");
+}
+.technologyList > li:nth-child(6){
+	background-image: url("");
+}
+.technologyList > li:nth-child(7){
+	background-image: url("");
+}
+.technologyList > li:nth-child(8){
+	background-image: url("");
+}
+.technologyList > li:nth-child(9){
+	background-image: url("");
+}
+.technologyList > li:nth-child(10){
+	background-image: url("");
+}*/
+.technologyList >li{
+	width: 250px;
+	height: 250px;
+	border-radius: 50%;
+	border: 1px solid black;
+	line-height: 250px;
+}
+.technologyList > li > img{
+	vertical-align: middle;
+	/*border-radius: 50%;
+	border: 1px solid black;*/
+}
+/* Carousel Styles */
+#portfolio > .container {
+  /*width: 210px;
+  height: 144px;*/
+  /*width: 510px;
+  height: 440px;*/
+  width: 700px;
+  height: 410px;
+  padding: 0;
+  /*padding-top: 40px;*/
+  position: relative;
+  -webkit-perspective: 1000;
+}
+#carousel {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  -webkit-transform-style: preserve-3d;
+  -webkit-transition: 1s; /* Safari */
+  transition: 1s;
+  top: 5px;
+}
+#carousel figure {
+  display: block;
+  position: absolute;
+  /*width: 186px;
+  height: 116px;*/
+  width: 386px;
+  height: 216px;
+
+  left: 160px;
+  top: 100px;
+  right:30px;
+  bottom: 30px;
+  border: 2px solid black;
+}
+
+#carousel figure{
+  background-repeat: no-repeat;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+#carousel figure:nth-child(1) { 
+	background-image: url("https://www.dropbox.com/s/aq3638nyr31toq1/Screen%20Shot%202017-07-18%20at%209.13.00%20PM.png?raw=1");
+	-webkit-transform: rotateY(0deg) translateZ(144px); 
+	image-rendering: -webkit-optimize-contrast;
+}
+#carousel figure:nth-child(2) { 
+	background-image: url("https://www.dropbox.com/s/1jqfz999jcybmzq/field-screen.png?raw=1");
+	-webkit-transform: rotateY(120deg) translateZ(144px); 
+}
+#carousel figure:nth-child(3) { 
+	background-image: url("https://www.dropbox.com/s/sbhpzpo01ud09in/images-screen.png?raw=1");
+	-webkit-transform: rotateY(240deg) translateZ(144px); 
+}
+.carouselNext, .carouselPrevious, .projectDescription{
+	position: relative;
+	z-index: 9;
+}
+.carouselNext, .carouselPrevious{
+	margin-top: -50px;
+}
+.projectDescription{
+	font-size: 22px;
+	/*top: 75px;*/ 
+}
+figcaption{
+	background-color: rgba(0, 0, 0, .5);
+	width: 150px;
+	border-radius: 0 0 15px 0;
+	font-size: 20px;
+	color: white;
+}
+figcaption.oppositeColorsCaption{
+	background-color: rgba(255, 255, 255, .9);
+	color: black;
+}
+.bold{
+	font-weight: bold;
+}
+.description{
+	/*-webkit-transition: 1s;*/
+}
+.background{
+	text-align: center;
+	margin: 0 auto;
+	width: 60%;
+}
+.background, .technologies{
+	margin-bottom: 20px;
+}
+.background p{
+	text-align: left;
+	text-indent: 20px;
+}
+.fixedNav{
+	top: 0;
+	position: fixed;
+	width: 100%;
+	z-index: 11;
+	margin-top: 0;
+	margin-bottom: 0;
+}
+.githubCaption{
+	position: absolute;
+	border-radius: 15px 15px 0 0;
+	bottom: 0;
+	width: 100%;
+	cursor: pointer;
+}
+
+.githubCaption > a{
+	color: white;
+	display: block;
+	border-radius: 15px 15px 0 0;
+}

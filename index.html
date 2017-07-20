@@ -1,0 +1,133 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>My Portfolio - Matthew Brando</title>
+	<meta name="description" content="App used to display personal profressional web developer details to the public.">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="initial-scale = 1.0,maximum-scale = 1.0" />
+	<link rel="stylesheet" type="text/css" href="https://necolas.github.io/normalize.css/5.0.0/normalize.css">
+    <!--<link type="text/css" rel="stylesheet" href="http://ajax.aspnetcdn.com/ajax/bootstrap/3.3.7/css/bootstrap.min.css" />-->
+  	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz:400,700" rel="stylesheet">
+    <link rel="stylesheet" href="css/animate.css">
+	<link rel="stylesheet" type="text/css" href="css/app.css">
+</head>
+<body id="home">
+	<header class="mainHeader">
+		<div class="wow zoomInDown myName">Matthew Brando</div>
+		<div class="wow zoomInDown jobTitle">Full Stack Web Developer</div>
+	</header>
+	<nav class="mainNav">
+		<ul class="navListHorizontal">
+			<li class="navListItem homeButton">
+				Home
+				<!--<a class="homeButton" href="">Home</a>-->
+			</li>
+			<li class="navListItem aboutMeButton">
+				About Me
+				<!--<a class="aboutMeButton" href="">About Me</a>-->
+			</li>
+			<li class="navListItem portfolioButton">			Portfolio	
+				<!--<a class="portfolioButton" href="">Portfolio</a>-->
+			</li>
+			<li class="navListItem contactButton">				Contact
+				<!--<a class="contactButton" href="">Contact</a>-->
+			</li>
+		</ul>
+	</nav>
+	<main class="mainContent">
+		<!--<section class="resume">
+			<header class="resumeHeader">Matthew Brando's Resume</header>
+			<div class="iframeContainer">
+				
+			</div>
+		</section>-->
+		<section id="aboutMe" class="aboutMeSection">
+			<header class="wow fadeInUp sectionHeader">About Me</header>
+<div class="container">
+  <div class="row">
+			<article class="wow fadeInUp col align-self-center background">
+				<header>Background</header>
+				<p>I am a fullstack web developer located in northeastern Pennsylvania. Previously, I graduated from Bloomsburg Univerity of Pennsylvania obtaining a Computer Science undergraduate degree. Since then I have received my Master's in Information Technology. I independently worked with several coding languages before settling on the Javascript stack of technology that I use today. I am always looking for a challenge and to increase my knowledge in the ever expanding realm of web development.</p>
+			<button type="button" class="btn btn-default resumeButton" data-toggle='modal' data-target='#myModal'>View Resume</button>
+			<div id="myModal" class="modal fade" role="dialog">
+  				<div class="modal-dialog modal-lg">
+
+    				<!-- Modal content-->
+    				<div class="modal-content">
+      					<div class="modal-header">
+        					<h4 class="modal-title text-center">My Resume</h4>
+      					</div>
+      					<div class="modal-body text-center">
+        					<iframe src="https://www.w3schools.com" width="500" height="500"></iframe>
+      					</div>
+      					<div class="modal-footer text-center">
+        					<button type="button" class="btn btn-default" data-dismiss="modal">Exit Resume</button>
+      					</div>
+    				</div>
+
+  				</div>
+			</div>
+			</article>
+			</div>
+			</div>
+			<article class="tehnologies">
+				<header class="wow fadeInUp">Technologies</header>
+				<p class="wow fadeInUp">The following is a list of technologies that I have worked with extensively (not a complete list): </p>
+				<ul class="technologyList">
+					<li class="wow rollIn"><img class="img-circle" src="images/js-logo.png" /></li>
+					<li class="wow rollIn"><img class="img-circle" src="images/express-logo.png" /></li>
+					<li class="wow rollIn"><img class="img-circle" src="images/nodejs-logo.png" /></li>
+					<li class="wow rollIn"><img src="images/reactjs-logo.png" /></li>
+					<li class="wow rollIn"><img class="img-circle" src="images/reduxjs-logo.png" /></li>
+					<li class="wow rollIn"><img src="images/mongodb-logo.png" /></li>
+					<li class="wow rollIn"><img class="img-circle" src="images/mongoose-logo.png" /></li>
+					<li class="wow rollIn"><img class="img-rounded" src="images/mocha-logo.png" /></li>
+					<li class="wow rollIn"><img class="img-circle" src="images/chai-logo.png" /></li>
+					<li class="wow rollIn"><img class="img-rounded" src="images/material-ui-logo.png" /></li>
+				</ul>
+			</article>
+		</section>
+		<section id="portfolio" class="portfolioSection">
+			<header class="wow fadeInUp sectionHeader">Portfolio Projects</header>
+			<div class="wow fadeInUp container">
+				<header class="projectDescription">
+					<p class="description"><span class="bold">Description</span>: App used to manage your guild for the Guild Wars 2 MMORPG</p>
+				</header>
+  				<div id="carousel">
+    				<figure><!--<img src="https://www.dropbox.com/s/aq3638nyr31toq1/Screen%20Shot%202017-07-18%20at%209.13.00%20PM.png?raw=1" alt="GW2 High Command Project">-->
+    					<figcaption>GW2 High Command</figcaption>	
+    					<figcaption class="githubCaption"><a href="https://github.com/mgbrando/gw-high-command/tree/stepper" target=”_blank”>Click to view on GitHub</a></figcaption>	
+    				</figure>
+    				<figure><!--<img src="https://www.dropbox.com/s/1jqfz999jcybmzq/field-screen.png?raw=1" alt="Coach Assistant Project">-->
+    					<figcaption>Coach Assistant</figcaption>
+    					<figcaption class="githubCaption"><a href="https://github.com/mgbrando/coach-assistant" target=”_blank”>Click to view on GitHub</a></figcaption>	
+    				</figure>
+    				<figure><!--<img src="https://www.dropbox.com/s/sbhpzpo01ud09in/images-screen.png?raw=1" alt="Travel Plan Project">-->
+    					<figcaption class="oppositeColorsCaption">Travel Companion</figcaption>	
+    					<figcaption class="githubCaption"><a href="https://github.com/mgbrando/travel-companion" target=”_blank”>Click to view on GitHub</a></figcaption>
+    				</figure>
+  				</div>
+			</div>
+  			<button type="button" class="btn btn-default carouselPrevious">Previous</button>
+			<button type="button" class="btn btn-default carouselNext">Next</button>
+		</section>
+		<section id="contact" class="contactSection">
+			<header class="wow fadeInUp sectionHeader">Contact Information</header>
+			<p class="wow fadeInUp">If there is further information that I can provide or if there are any open opportunities, please feel free to <a href="mailto:mgbrando29@gmail.com">contact me</a>.</p>
+		</section>
+	</main>
+	<footer class="mainFooter">Placeholder for copyright and maybe social links.</footer>
+
+	<!--<script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.1.1.min.js"></script>
+    <script type="text/css" rel="stylesheet" href="http://ajax.aspnetcdn.com/ajax/bootstrap/3.3.7/bootstrap.min.js"></script>-->
+  	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script>
+        new WOW().init();
+    </script>
+  	<script src="js/app.js"></script>
+</body>
+</html>
