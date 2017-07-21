@@ -9,11 +9,18 @@
 	<link rel="stylesheet" type="text/css" href="https://necolas.github.io/normalize.css/5.0.0/normalize.css">
     <!--<link type="text/css" rel="stylesheet" href="http://ajax.aspnetcdn.com/ajax/bootstrap/3.3.7/css/bootstrap.min.css" />-->
   	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/font-awesome.min.css">
+	<link rel="stylesheet" href="css/style.css">
     <link href="https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz:400,700" rel="stylesheet">
+	<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400,700">
+
     <link rel="stylesheet" href="css/animate.css">
 	<link rel="stylesheet" type="text/css" href="css/app.css">
 </head>
 <body id="home">
+	<div class="loadingScreen">
+		<div class="loader"></div>
+	</div>
 	<header class="mainHeader">
 		<div class="wow zoomInDown myName">Matthew Brando</div>
 		<div class="wow zoomInDown jobTitle">Full Stack Web Developer</div>
@@ -51,6 +58,7 @@
 				<header>Background</header>
 				<p>I am a fullstack web developer located in northeastern Pennsylvania. Previously, I graduated from Bloomsburg Univerity of Pennsylvania obtaining a Computer Science undergraduate degree. Since then I have received my Master's in Information Technology. I independently worked with several coding languages before settling on the Javascript stack of technology that I use today. I am always looking for a challenge and to increase my knowledge in the ever expanding realm of web development.</p>
 			<button type="button" class="btn btn-default resumeButton" data-toggle='modal' data-target='#myModal'>View Resume</button>
+			<button type="button" class="btn btn-default resumeButton smallWidthResumeButton"><a href="images/resume.pdf" target="_blank">View Resume</a></button>
 			<div id="myModal" class="modal fade" role="dialog">
   				<div class="modal-dialog modal-lg">
 
@@ -60,7 +68,7 @@
         					<h4 class="modal-title text-center">My Resume</h4>
       					</div>
       					<div class="modal-body text-center">
-        					<iframe src="https://www.w3schools.com" width="500" height="500"></iframe>
+        					<iframe src="images/resume.pdf" width="600" height="500"></iframe>
       					</div>
       					<div class="modal-footer text-center">
         					<button type="button" class="btn btn-default" data-dismiss="modal">Exit Resume</button>
@@ -72,7 +80,7 @@
 			</article>
 			</div>
 			</div>
-			<article class="tehnologies">
+			<article class="technologies">
 				<header class="wow fadeInUp">Technologies</header>
 				<p class="wow fadeInUp">The following is a list of technologies that I have worked with extensively (not a complete list): </p>
 				<ul class="technologyList">
@@ -112,13 +120,45 @@
 			</div>
   			<button type="button" class="btn btn-default carouselPrevious">Previous</button>
 			<button type="button" class="btn btn-default carouselNext">Next</button>
+			<div class="smallWidthProjects">
+				<figure>
+					<header class="wow fadeInUp">GW2 High Command <a href="https://github.com/mgbrando/gw-high-command/tree/stepper" target="_blank" class="btn azm-social azm-circle azm-size-32 azm-long-shadow azm-github"><i class="fa fa-github"></i></a></header>
+					<img class="wow fadeInUp" src="images/gw2highcommand.png" alt="GW2 High Command" />
+					<figcaption class="wow fadeInUp"><span class="bold">Description</span>: App used to manage your guild for the Guild Wars 2 MMORPG</figcaption>
+				</figure>
+				<figure>
+					<header class="wow fadeInUp">Coach Assistant<a href="https://github.com/mgbrando/coach-assistant" target="_blank" class="btn azm-social azm-circle azm-size-32 azm-long-shadow azm-github"><i class="fa fa-github"></i></a></header>
+					<img class="wow fadeInUp" src="images/soccer_ball.jpg" alt="Coach Assistant" />
+					<figcaption class="wow fadeInUp"><span class="bold">Description</span>: App used to manage your soccer team's roster</figcaption>
+				</figure>
+				<figure>
+					<header class="wow fadeInUp">Travel Companion <a href="https://github.com/mgbrando/travel-companion" target="_blank" class="btn azm-social azm-circle azm-size-32 azm-long-shadow azm-github"><i class="fa fa-github"></i></a></header>
+					<img class="wow fadeInUp" src="images/travel-companion.png" alt="Travel Companion" />
+					<figcaption class="wow fadeInUp"><span class="bold">Description</span>: App used to aid you when you travel by helping you locate scenery, entertainment, and events in a selected area. The app also includes a translator for the dominant language in an area.</figcaption>
+				</figure>
+			</div>
 		</section>
 		<section id="contact" class="contactSection">
 			<header class="wow fadeInUp sectionHeader">Contact Information</header>
 			<p class="wow fadeInUp">If there is further information that I can provide or if there are any open opportunities, please feel free to <a href="mailto:mgbrando29@gmail.com">contact me</a>.</p>
 		</section>
+		<section id="thanks" class="wow fadeInUp thanksSection">
+			<p class="farewellMessage"><span>Thanks for visiting!</span> <span>Please free free to visit my social links below!</span></p>
+		</section>
 	</main>
-	<footer class="mainFooter">Placeholder for copyright and maybe social links.</footer>
+	<footer class="mainFooter">
+	<ul>
+		<li class="wow tada">
+			<a href="https://twitter.com/matthew_brando" target="_blank" class="btn azm-social azm-r-square azm-size-64 azm-long-shadow azm-twitter"><i class="fa fa-twitter"></i></a>
+		</li>
+		<li class="wow tada">
+			<a href="https://www.linkedin.com/public-profile/settings?trk=d_flagship3_profile_self_view_public_profile" target="_blank" class="btn azm-social azm-r-square azm-size-64 azm-long-shadow azm-linkedin"><i class="fa fa-linkedin"></i></a>
+		</li>
+		<li class="wow tada">
+			<a href="https://github.com/mgbrando" target="_blank" class="btn azm-social azm-r-square azm-size-64 azm-long-shadow azm-github"><i class="fa fa-github"></i></a>
+		</li>
+	</ul>
+</footer>
 
 	<!--<script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.1.1.min.js"></script>
     <script type="text/css" rel="stylesheet" href="http://ajax.aspnetcdn.com/ajax/bootstrap/3.3.7/bootstrap.min.js"></script>-->
