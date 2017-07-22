@@ -395,6 +395,9 @@ figcaption.oppositeColorsCaption{
 .contactSection a{
 	cursor: pointer;
 }
+.contactSection a:hover{
+	color: blue;
+}
 .smallWidthProjects{
 	display: none;
 }
@@ -509,8 +512,15 @@ article.technologies > p{
 	.smallWidthProjects > figure > header{
 		font-size: 28px;
 	}
-	.smallWidthProjects > figure > header > a{
+	.smallWidthsLinks{
 		float: right;
+		line-height: 44px;
+	}
+	.smallWidthsLinks > a:nth-of-type(1):hover{
+		color: blue;
+	}
+	.smallWidthsLinks > a:nth-of-type(2){
+		vertical-align: middle;
 	}
 	.smallWidthProjects > figure:nth-of-type(1), .smallWidthProjects > figure:nth-of-type(2){
 		margin-bottom: 20px;
