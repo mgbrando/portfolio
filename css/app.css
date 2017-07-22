@@ -49,7 +49,7 @@ section{
 	text-align: center;
 }
 .mainHeader{
-	background-image: url("https://www.continentalcredit.com/wp-content/uploads/2015/12/about-header-background-for-web-768x312.jpg");
+	background-image: url("../images/header-image.jpg");
 	background-repeat: no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -97,14 +97,14 @@ article > header{
 .mainFooter{
 	padding-left: 20px;
 	padding-right: 20px;
-	position: absolute;
+	/*position: absolute;
 	margin-top: -20px;
-	z-index: -1;
+	z-index: -1;*/
 	width: 100%;
 }
 .popOutFooter{
-	margin-top: 0;
-	z-index: 1;
+	/*margin-top: 0;
+	z-index: 1;*/
 }
 .resumeHeader, .iframeContainer{
 	text-align: center;
@@ -295,6 +295,7 @@ article > header{
 }
 .carouselNext, .carouselPrevious{
 	margin-top: -50px;
+	width: 80px;
 }
 .projectDescription{
 	font-size: 22px;
@@ -343,18 +344,24 @@ figcaption.oppositeColorsCaption{
 }
 .githubCaption{
 	position: absolute;
-	border-radius: 15px 15px 0 0;
+	border-radius: 0 0 0 0;
 	bottom: 0;
 	width: 100%;
 	cursor: pointer;
+	background-color: rgba(0, 0, 0, 1);
+	padding-top: 4px;
+	padding-bottom: 2px;
 }
-.githubCaption:hover{
-	text-decoration: underline;
+.githubCaption > a:hover{
+	background-color: white;
+	border-radius: 15%;
+	color: black;
 }
 .githubCaption > a{
 	color: white;
-	display: block;
+	display: inline-block;
 	border-radius: 15px 15px 0 0;
+	padding: 3px;
 }
 .mainFooter{
 	text-align: center;
@@ -383,6 +390,7 @@ figcaption.oppositeColorsCaption{
 	font-size: 32px;
 	font-weight: bold;
 	text-shadow: 2px 2px #000000;
+	margin-bottom: 0;
 }
 .contactSection a{
 	cursor: pointer;
@@ -393,7 +401,42 @@ figcaption.oppositeColorsCaption{
 .smallWidthResumeButton{
 	display: none;
 }
-@media (max-width: 1039px) {
+section.aboutMeSection, section.portfolioSection{
+	margin-bottom: 150px;
+}
+article.background, article.technologies{
+	margin-bottom: 150px;
+}
+article.background > p{
+	border: 1px solid black;
+	border-radius: 15px;
+	padding: 20px;
+}
+article.technologies > p{
+	margin-bottom: 15px;
+}
+.technologyList > li{
+	width: 200px;
+	height: 200px;
+}
+.technologyList > li:nth-child(1) > img,
+.technologyList > li:nth-child(2) > img,
+.technologyList > li:nth-child(3) > img,
+.technologyList > li:nth-child(4) > img,
+.technologyList > li:nth-child(5) > img,
+.technologyList > li:nth-child(6) > img,
+.technologyList > li:nth-child(7) > img,
+.technologyList > li:nth-child(9) > img,
+.technologyList > li:nth-child(10) > img{
+	width: 150px;
+}
+.technologyList > li:nth-child(8) > img{
+	height: 150px;
+}
+.technologyList > li{
+	line-height: 200px;
+}
+/*@media (max-width: 1039px) {
 	.technologyList > li{
 		width: 200px;
 		height: 200px;
@@ -415,7 +458,7 @@ figcaption.oppositeColorsCaption{
 	.technologyList > li{
 		line-height: 200px;
 	}
-}
+}*/
 @media (max-width: 839px) {
 	.technologyList > li{
 		width: 150px;
