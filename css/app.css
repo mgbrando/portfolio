@@ -462,6 +462,16 @@ article.technologies > p{
 		line-height: 200px;
 	}
 }*/
+.modal-body iframe{
+	width: 100%;
+	height: 500px;
+}
+@media (max-width: 991px) {
+	#myModal .modal-dialog{
+		width: 90%;
+		margin: 0 auto;
+	}
+}
 @media (max-width: 839px) {
 	.technologyList > li{
 		width: 150px;

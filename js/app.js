@@ -79,6 +79,33 @@ function handleResize(){
 	$(window).resize(function() {
 		if($('#myModal').is(":visible") && $(window).width() <= 649)
 			$('#myModal').modal('hide');
+		if($(window).width() > 970){
+			if(!$('#iframe100').is(":visible")){
+				$('#iframe70').hide();
+				$('#iframe85').hide();
+				$('#iframe100').show();
+			}
+		}
+		if($(window).width() <= 970 && $(window).width() > 820){
+			if(!$('#iframe85').is(":visible")){
+				$('#iframe100').hide();
+				$('#iframe70').hide();
+				$('#iframe85').show();
+			}
+		}
+		if($(window).width() <= 820){
+			if(!$('#iframe70').is(":visible")){
+				$('#iframe100').hide();
+				$('#iframe85').hide();
+				$('#iframe70').show();
+			}
+			//if($('#iframe100').attr('src') !== 'images/resume.pdf#zoom=70'){
+				//$('#myModal .modal-body').empty().append('<iframe src="images/resume.pdf#zoom=70"></iframe>');
+			//$('#iframe100').attr('src', 'images/resume.pdf#zoom=70');
+			//$('#iframe100').attr('src', $('#iframe100').attr('src'));
+			//document.getElementById('#iframe100').reload(true);
+			//}
+		}
 	});
 }
 function handleNavigation(){
@@ -107,6 +134,18 @@ function handleNavigation(){
 function handleInitialization(){
 	$('.loadingScreen').fadeOut();
 	$('html, body').addClass('loaded');
+	if($(window).width() > 970){
+		$('#iframe70').hide();
+		$('#iframe85').hide();
+	}
+	else if($(window).width() <= 970 && $(window).width() > 820){
+		$('#iframe70').hide();
+		$('#iframe100').hide();
+	}
+	else if($(window).width() <= 820){
+		$('#iframe100').hide();
+		$('#iframe85').hide();
+	}
 	handleVerticalScrolling();
 	handleResize();
 	handleNavigation();
