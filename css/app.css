@@ -83,7 +83,7 @@ section {
   text-indent: 30px;
 }
 .portfolioSection {
-  text-align: center;
+  text-align: left;
 }
 /*article{
 	margin-bottom: 20px;
@@ -244,13 +244,13 @@ article > header {
 	border: 1px solid black;*/
 }
 /* Carousel Styles */
-#portfolio > .container {
+#portfolio > .projectsContainer {
   /*width: 210px;
   height: 144px;*/
   /*width: 510px;
   height: 440px;*/
-  width: 700px;
-  height: 410px;
+  /*width: 700px;*/
+  /*height: 410px;*/
   padding: 0;
   /*padding-top: 40px;*/
   position: relative;
@@ -314,12 +314,49 @@ article > header {
   font-size: 22px;
   /*top: 75px;*/
 }
-figcaption {
+.projectsContainer figure {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-bottom: 100px;
+  width: 100%;
+  justify-content: center;
+  margin-top: -20px;
+}
+.projectsContainer figure img {
+  height: 363.5px;
+  width: 702.5px;
+  border: 1px solid black;
+  margin-top: 20px;
+}
+.smallWidthProjects figcaption {
   background-color: rgba(0, 0, 0, 0.5);
   width: 150px;
   border-radius: 0 0 15px 0;
   font-size: 20px;
   color: white;
+}
+.projectsContainer figcaption {
+  background-color: rgba(0, 0, 0, 0.5);
+  /*width: 150px;
+  float: right;*/
+  flex: 1;
+  /*width: 400px;*/
+  font-size: 20px;
+  color: white;
+  padding: 15px;
+  max-height: 363.5px;
+  min-width: 357.5px;
+  max-width: 702.5px;
+  margin-left: 10px;
+  margin-top: 20px;
+}
+figcaption header {
+  font-size: 2em;
+}
+figcaption header,
+figcaption p {
+  margin-bottom: 10px;
 }
 figcaption.oppositeColorsCaption {
   background-color: rgba(255, 255, 255, 0.9);
@@ -422,6 +459,11 @@ section.aboutMeSection,
 section.portfolioSection {
   margin-bottom: 150px;
 }
+/*section.portfolioSection .container {
+  display: flexbox;
+  flex-direction: column;
+  justify-content: space-between;
+}*/
 article.background,
 article.technologies {
   margin-bottom: 150px;
@@ -482,6 +524,22 @@ article.technologies > p {
   width: 100%;
   height: 500px;
 }
+@media (max-width: 1109px) {
+  .projectsContainer figure {
+    flex-direction: column;
+  }
+  .projectsContainer figure img,
+  .projectsContainer figcaption {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+/*@media (max-width: 1109px) {
+  figcaption {
+    border-radius: 5px;
+    margin-left: 0px;
+  }
+}*/
 @media (max-width: 991px) {
   #myModal .modal-dialog {
     width: 90%;
@@ -528,9 +586,12 @@ article.technologies > p {
 }
 
 @media (max-width: 732px) {
-  .portfolioSection .container,
+  /*.portfolioSection .container,
   .carouselPrevious,
   .carouselNext {
+    display: none;
+  }*/
+  #portfolio > .projectsContainer {
     display: none;
   }
   .smallWidthProjects {
